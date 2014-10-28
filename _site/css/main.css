@@ -1,0 +1,657 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.hljs {
+  background: #3C3830 !important;
+  color: white !important;
+}
+
+.highlight {
+  width: 50% !important;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   @font-face {
+    font-family: 'socicon';
+    src: url('/font/socicon-webfont.eot');
+    src: url('/font/socicon-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/socicon-webfont.woff') format('woff'),
+         url('/font/socicon-webfont.ttf') format('truetype'),
+         url('/font/socicon-webfont.svg#sociconregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.socicon {
+    font-family: 'socicon' !important;
+    font-size: 18pt;
+}
+
+#footer a {
+  text-decoration: none;
+  color: black;
+  padding: 0px 5px 0px 5px;
+  vertical-align: middle;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+
+.site-wrap {
+  width: 100%;
+  height: 97%;
+  float: left;
+  overflow: hidden;
+}
+
+#title {
+  font-family: 'pacifico';
+  font-size: 125px;
+  margin: 70px 0px 0px 0px;
+  line-height: 130%;
+  text-shadow: 1px 2px 1px white;
+}
+
+#subtitle {
+  font-family: 'open sans condensed';
+  font-size: 25px;
+  margin: 10;
+}
+
+#subsub {
+  font-family: 'open sans condensed';
+  margin-bottom: 60px;
+}
+
+#mainLinks {
+  font-family: 'open sans condensed';
+  width: 40%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+#mainLinks a {
+  text-decoration: underline;
+  color: #cf5125;
+}
+
+ #sideNav {
+    width: 10%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #133c53;
+    text-align: center;
+    float: left;
+    z-index: 3;
+    box-shadow: 0px 0px 10px black;
+  }
+
+  #sideNav * {
+    font-family: 'open sans condensed';
+    color: white;
+  }
+
+  #bigList {
+    list-style: none;
+    width: 100%;
+    margin-top: 10%;
+    float: left;
+    padding: 10%;
+  }
+
+  #bigList li {
+    font-size: 1.5em;
+    text-decoration: none;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: auto;
+    text-align: right;
+    margin: 0 auto;
+  }
+
+  #bigList li p{
+    padding-right: 10px;
+    float: right;
+    font-size: 1.1vw;
+  }
+
+  #bigList li span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #bigList li:hover p {
+    color: #cf5125;
+  }
+
+  #bigList li:hover div {
+    background: url("/img/OutlookAfter.png");
+    background-size: cover;
+  }
+
+  #sideLogo {
+    margin-top: 10px;
+    width: 100%;
+    height: 10%;
+    background: url("/img/logo.png");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid #cf5125;
+  }
+
+  #outlookLogo {
+    background: url("/img/Outlook.png");
+    width: 100px;
+    height: 100px;
+    float: left;
+  }
+
+  #item {
+    float: left;
+  }
+
+  .container {
+    width: 90%;
+    float: right;
+    height: 97vh;
+    overflow: auto;
+    background: url("/img/bg.jpg");
+    position: relative;
+    text-align: center;
+  }
+
+  #footer{
+    width: 90%;
+    height: 30px;
+    background-color: #cf5125;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    opacity: .9;
+    text-align: right;
+    padding-right: 20px;
+    vertical-align: middle;
+    display: table-cell;
+  }
+
+  .menuIcon {
+    display: inline-block;
+    width: 30%;
+    padding-bottom: 30%;
+    background: url("/img/OutlookBefore.png");
+    background-size: cover;
+    float: left;
+  }
+
+.navigation {
+  display: none;
+}
+
+.nav-trigger {
+  display: none;
+}
+
+#arrowCont {
+  width: 100%;
+  height: 20%;
+}
+
+#arrow {
+  width: 65px;
+  padding-bottom: 65px;
+  background: url("/img/arrow.png");
+  background-size: 95%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 48%;
+  top: 70px;
+  -webkit-animation: mymove 1s infinite; /* Chrome, Safari, Opera */
+  animation: mymove 1s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    0% {top: 70px;}
+    50% {top: 60px;}
+    100% {top: 70px;}
+}
+
+@keyframes mymove {
+    0% {top: 70px;}
+    50% {top: 60px;}
+    100% {top: 70px;}
+}
+
+#posts {
+  text-align: left;
+  padding-left: 10%;
+  background: url("/img/p5.png");
+  width: 100%;
+  padding-top: 70px;
+  -moz-box-shadow:    inset 0px 0px 20px #000000;
+  -webkit-box-shadow: inset 0px 0px 20px #000000;
+  box-shadow:         inset 0px 0px 20px #000000;
+}
+
+#posts h1 {
+  font-size: 3em;
+}
+
+#posts ul {
+  list-style: none;
+}
+
+#posts ul li {
+  width: 50%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 50px;
+  border-left: 2px solid black;
+}
+
+code {
+  background: #3C3830;
+  margin-left: 20px;
+}
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: 1280px) {
+    #bigList {
+        margin-top: 20px;
+    }
+
+    #bigList li {
+        width: 100%;
+        float: none;
+        text-align: center;
+        padding: 5px 0 5px 0;
+    }
+
+    #bigList li p {
+      font-size: 16px;
+      float: none;
+      padding: 0;
+    }
+
+    p {
+        margin-top: 0;
+    }
+
+    .menuIcon {
+        width: 40%;
+        padding-bottom: 40%;
+        float: none;
+    }
+
+    #title {
+      font-size: 70pt;
+    }
+
+    #subsub {
+      margin-bottom: 20px;
+    }
+
+    #subsub h2 {
+      margin-bottom: 0px;
+    }
+
+    #arrowCont {
+      height: 100px;
+    }
+
+    #arrow {
+      width: 50px;
+      -webkit-animation: mymove1280 1s infinite; /* Chrome, Safari, Opera */
+  animation: mymove1280 1s infinite;
+    }
+
+    /* Chrome, Safari, Opera */
+  @-webkit-keyframes mymove1280 {
+    0% {top: 5px;}
+    50% {top: 0px;}
+    100% {top: 5px;}
+  }
+
+  @keyframes mymove1280 {
+    0% {top: 5px;}
+    50% {top: 0px;}
+    100% {top: 5px;}
+  }
+}
+
+@media (max-width: 1024px) {
+  #title {
+    font-size: 70pt;
+  }
+
+  #mainLinks {
+    width: 60%;
+  }
+
+  #arrow {
+    width: 50px;
+    -webkit-animation: mymove1024 1s infinite; /* Chrome, Safari, Opera */
+    animation: mymove1024 1s infinite;
+  }
+
+    /* Chrome, Safari, Opera */
+  @-webkit-keyframes mymove1024 {
+    0% {top: 15px;}
+    50% {top: 10px;}
+    100% {top: 15px;}
+  }
+
+  @keyframes mymove1024 {
+    0% {top: 15px;}
+    50% {top: 10px;}
+    100% {top: 15px;}
+  }
+}
+
+@media (max-width: 966px) {
+    #title {
+      margin-top: 30px;
+    }
+
+    #arrowCont {
+      display: none;
+    }
+
+    #mainLinks {
+      margin-bottom: 40px;
+    }
+  }
+
+@media (max-width: 768px) {
+  #sideNav {
+    width: 100vw;
+    height: 50px;
+    border-bottom: 2px solid #cf5125;
+  }
+
+  #sideLogo {
+    width: 30%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+
+  .container {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  #bigList {
+    display: none;
+  }
+
+  #footer {
+    width: 100%;
+  }
+
+  .site-wrap {
+  /* Critical position and size styles */
+  min-height: 97%;
+  min-width: 100%;
+  background-color: white; /* Needs a background or else the nav will show through */
+  position: relative;
+  top: 0;
+  bottom: 197%;
+  right: 0;
+  z-index: 1;
+  }
+
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+#footer {
+  /* Critical position and size styles */
+  max-height: 25px;
+  min-height: 25px;
+  min-width: 100%;
+  position: relative;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  float: right;
+  }
+
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Navigation Menu - Background */
+.navigation {
+  /* critical sizing and position styles */
+  padding-top: 50px;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  display: block;
+  /* non-critical appearance styles */
+  list-style: none;
+  background: #133c53;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+/* Navigation Menu - List items */
+.nav-item {
+  /* non-critical appearance styles */
+  width: 150px;
+  border-bottom: 1px solid #000;
+  clear: right;
+  font-family: 'open sans condensed';
+}
+
+.nav-item a {
+  /* non-critical appearance styles */
+  display: block;
+  padding: 1em;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  color: white;
+  background: #c45b37;
+}
+
+/* Nav Trigger */
+.nav-trigger {
+  /* critical styles - hide the checkbox input */
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+  /* critical positioning styles */
+  position: fixed;
+  right: 15px; top: 10px;
+  z-index: 2;
+  color: white;
+  /* non-critical apperance styles */
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-size: contain;
+}
+
+/* Make the Magic Happen */
+.site-wrap, #footer {
+  transition: right 0.2s;
+}
+
+#footer {
+  transition: right 0.2s;
+}
+
+.nav-trigger:checked ~ .site-wrap, .nav-trigger:checked ~ #footer {
+  right: 150px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+body {
+    /* Without this, the body has excess horizontal scroll when the menu is open */
+  overflow-x: hidden;
+}
+
+/* Micro reset */
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }
+
+li {
+    float: right;
+}
+}

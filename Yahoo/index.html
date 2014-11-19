@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<section id="posts">
+	<h1>Yahoo!</h1>
+	<ul>
+		{% if site.tags.yahoo == null %}
+		  		<p>There are no Yahoo! hacks yet.</p>
+		{% else %}
+			{% for post in site.tags.yahoo %}
+			  <li>{{ post.content }}</li>
+			{% endfor %}
+		{% endif %}
+	</ul>
+</section>

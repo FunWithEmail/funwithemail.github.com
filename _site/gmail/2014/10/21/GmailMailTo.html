@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -73,3 +75,32 @@
         </ul>
       </nav>
       <div class="container">
+  <h2>Fix mailto in gmail</h2>
+
+<h4>gmail strips subject and body from mailto links</h4>
+
+<p>Use lowercase for subject anbd body attribute</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;mailto:some_email@email.com?subject=A Subject&amp;body=A Body&quot;</span><span class="nt">&gt;</span>email@email.com<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+<p><em>-courtesy of SV</em></p>
+
+			<div id="footer">
+				<a href="http://twitter.com/_netcodes"><span class="socicon">Q</span></a>
+				<a href="http://twitter.com/_netcodes"><span class="socicon">b</span></a>
+				<a href="http://twitter.com/_netcodes"><span class="socicon">a</span></a>
+				<a href="http://twitter.com/_netcodes"><span class="socicon">c</span></a>
+		</div>
+	</div>	
+</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="/js/jquery.dlmenu.js"></script>
+	<script src="/js/main.js"></script>
+	<script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu();
+			});
+		</script>
+  </body>
+</html>
+

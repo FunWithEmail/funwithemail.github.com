@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<section id="posts">
+	<h1>Yahoo!</h1>
+	<ul>
+		{% if site.tags.windows == null %}
+		  		<p>There are no Windows Phone hacks yet.</p>
+		{% else %}
+			{% for post in site.tags.windows %}
+			  <li>{{ post.content }}</li>
+			{% endfor %}
+		{% endif %}
+	</ul>
+</section>

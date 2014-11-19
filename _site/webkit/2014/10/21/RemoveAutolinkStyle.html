@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -73,3 +75,36 @@
         </ul>
       </nav>
       <div class="container">
+  <h2>Remove autolink styling in iOS:</h2>
+
+<h4>Fix automatic styling of phone numbers, etc.</h4>
+
+<p>Use a span:</p>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.appleLinksBlack</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">text-decoration</span><span class="o">:</span><span class="k">none</span> <span class="cp">!important</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.appleLinksBlack</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span><span class="m">#000000</span> <span class="cp">!important</span><span class="p">;</span> <span class="p">}</span>
+</code></pre></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;appleLinksBlack&quot;</span><span class="nt">&gt;</span>866-787-7030<span class="nt">&lt;/span&gt;</span>
+</code></pre></div>
+<p>Add additional classes such as <code>.appleLinksWhite a</code>, <code>.appleLinksPink a</code> when appropriate</p>
+
+<p><em>-courtesy of Justine Jordan</em></p>
+
+			<div id="footer">
+				<a href="http://twitter.com/_netcodes"><span class="socicon">Q</span></a>
+				<a href="http://twitter.com/_netcodes"><span class="socicon">b</span></a>
+				<a href="http://twitter.com/_netcodes"><span class="socicon">a</span></a>
+				<a href="http://twitter.com/_netcodes"><span class="socicon">c</span></a>
+		</div>
+	</div>	
+</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="/js/jquery.dlmenu.js"></script>
+	<script src="/js/main.js"></script>
+	<script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu();
+			});
+		</script>
+  </body>
+</html>
+

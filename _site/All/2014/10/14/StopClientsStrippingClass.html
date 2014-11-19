@@ -13,8 +13,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
@@ -25,7 +25,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 <ul class="navigation">
-    <li class="nav-item"><a href="#">Home</a></li>
+    <li class="nav-item"><a href="http://localhost:4000/Outlook/">Home</a></li>
     <li class="nav-item"><a href="#">Portfolio</a></li>
     <li class="nav-item"><a href="#">About</a></li>
     <li class="nav-item"><a href="#">Blog</a></li>
@@ -38,31 +38,51 @@
 <div class="site-wrap">
 
 
-      <nav id="sideNav">
+      <nav id="sideNav"><a href="http://localhost:4000/">
         <div id="sideLogo">
-        </div>
+        </div></a>
         <ul id="bigList">
-          <li>
-            <div class="menuIcon"></div><p>OUTLOOK</p>
-          </li>
-          <li>
-            <div class="menuIcon"></div><p>OUTLOOK</p>
-          </li>
-          <li>
-            <div class="menuIcon"></div><p>OUTLOOK</p>
-          </li>
-          <li>
-            <div class="menuIcon"></div><p>OUTLOOK</p>
-          </li>
+          <a href="http://localhost:4000/Outlook/">
+            <li class="list" id="all">
+              <div class="menuIcon"></div><p>OUTLOOK</p>
+            </li>
+          </a>
+          <a href="http://localhost:4000/Gmail/">
+            <li class="list" id="outlook">
+              <div class="menuIcon"></div><p>GMAIL</p>
+            </li>
+          </a>
+          <a href="http://localhost:4000/Yahoo/">
+            <li class="list">
+              <div class="menuIcon"></div><p>YAHOO!</p>
+            </li>
+          </a>
+          <a href="http://localhost:4000/Webkit/">
+            <li class="list">
+              <div class="menuIcon"></div><p>WEBKIT</p>
+            </li>
+          </a>
+          <a href="http://localhost:4000/Windows/">
+            <li class="list">
+              <div class="menuIcon"></div><p>WINDOWS<br>PHONE</p>
+            </li>
+          </a>
+          <a href="http://localhost:4000/All/">
+            <li class="list">
+              <div class="menuIcon"></div><p>ALL</p>
+            </li>
+          </a>
         </ul>
       </nav>
       <div class="container">
-  <h2>Kill Gmail App Zooming:</h2>
+  <h2>Stop some clients from stripping class:</h2>
 
-<h4>Stop Gmail app from zooming text</h4>
-<div class="highlight"><pre><code class="language-html" data-lang="html">style=&quot;min-width:600px;&quot;
+<h4>Some clients strip any lines starting with “.”</h4>
+
+<p>Use a space before any class styling</p>
+<div class="highlight"><pre><code class="language-css" data-lang="css"> <span class="nc">.selector</span> <span class="p">{</span> <span class="p">}</span>
 </code></pre></div>
-<p><em>-courtesy of Chris Wise</em></p>
+<p><em>-courtesy of Campaign Monitor http://kb.mailchimp.com/campaigns/ways-to-build/using-css-in-campaigns</em></p>
 
 			<div id="footer">
 				<a href="http://twitter.com/_netcodes"><span class="socicon">Q</span></a>

@@ -1,5 +1,5 @@
 ---
-title: Lorem Ipsum Dolor Sit Amet
+title: Interactive Email in Gmail
 layout: default
 category: Gmail
 tag: gmail

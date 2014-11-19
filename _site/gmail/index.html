@@ -75,32 +75,7 @@
         </ul>
       </nav>
       <div class="container">
-  <h1 id="title">HTML	Email<br>Hacks</h1>
-
-<h3 id="subtitle">A series of HTML hacks for all those lovely Email clients out there.</h3>
-
-<h4 id="subsub">This repo is a place to put all of the HTML Email hacks we all depend on so much to get our campaigns looking and feeling sweet and spiffy. </h4>
-
-<div id="line"></div>
-
-<h2>Links and Helpful Tools</h2>
-<div id="mainLinks">
-<ul>
-<li> Responsive Email Resources: <a href="www.ResponsiveEmailResources.com">www.ResponsiveEmailResources.com</a></li>
-<li> Bulletproof Buttons: <a href="www.buttons.cm">www.buttons.cm</a></li>
-<li> Bulletproof Backgrounds: <a href="www.backgrounds.cm">www.backgrounds.cm</a></li>
-<li> HTML Email Boilerplate: <a href="www.http://htmlemailboilerplate.com">www.http://htmlemailboilerplate.com</a></li>
-<li> Special characters for HTML Email: <a href="http://www.emailonacid.com/character_converter/">http://www.emailonacid.com/character_converter/</a></li> 
-<li> Send HTML Email with Google Docs: <a href="http://www.labnol.org/internet/send-html-email/19672/">http://www.labnol.org/internet/send-html-email/19672/</a></li>
-</ul>
-</div>
-
-<div id="arrowCont">
-	<div id="arrow"><a href="#"></a>
-	</div>
-</div>
-
-<!-- <section id="posts">
+  <section id="posts">
 	<h1>Gmail</h1>
 	<ul>
 	  
@@ -150,83 +125,7 @@
 </li>
 	  
 	</ul>
-
-	<h1>Outlook</h1>
-	<ul>
-	  
-	    <li><h2>Outlook “View in Browser”:</h2>
-
-<h4>Forces Outlook to provide a “view in browser link”</h4>
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#outlook</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span>
-</code></pre></div></li>
-	  
-	    <li><h2>Fix mailto in Outlook.com</h2>
-
-<h4>Outlook.com stops mailto from opening a new message</h4>
-
-<p>Add &quot;target=_blank&quot;</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">target=</span><span class="s">&quot;_blank&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
-</code></pre></div>
-<p><em>-courtesy of Matthijs</em></p>
-</li>
-	  
-	    <li><h2>Ghost column to emulate &quot;align&quot; in Outlook</h2>
-
-<h4>Outlook hates &quot;align&quot;; we love conditionals</h4>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;td&gt;</span>
-    Table X
-    <span class="c">&lt;!--[if mso]&gt;&lt;/td&gt;&lt;td&gt;&lt;![endif]--&gt;</span>
-    Table Y
-<span class="nt">&lt;/td&gt;</span>
-</code></pre></div>
-<p><em>-courtesy of Mike Ragan http://labs.actionrocket.co/make<em>mobile</em>email<em>work</em>in_outlook</em></p>
-</li>
-	  
-	    <li><h2>Interactive Email con’t - Hover!:</h2>
-
-<h4>Hover effect works on these clients:</h4>
-
-<p>Gmail: </p>
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">*</span> <span class="o">[</span><span class="nt">lang</span><span class="o">~=</span><span class="s2">&quot;x-selector&quot;</span><span class="o">]</span><span class="nd">:hover</span> <span class="p">{</span> <span class="p">}</span>
-</code></pre></div>
-<p>Outlook Web:</p>
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.class</span><span class="nd">:hover</span>
-</code></pre></div>
-<p>Yahoo! Web: </p>
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.class</span><span class="nd">:hover</span>
-</code></pre></div>
-<p><em>-courtesy of Justin at FreshInbox</em></p>
-</li>
-	  
-	    <li><h2>Image gaps in Office 365 (OWA)</h2>
-
-<h4>Office 365 strips display:block causing images to have massive gaps</h4>
-
-<p>Wrapping an image in a <code>&lt;div&gt;</code> with a height equal to the image height will simulate
-a block element for clients that won&#39;t accept <code>display:block</code>.</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;height:125px;&quot;</span><span class="nt">&gt;</span>  
-    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/path/to/image.jpg&quot;</span> <span class="na">alt=</span><span class="s">&quot;Image Description&quot;</span> <span class="na">style=</span><span class="s">&quot;display:block;&quot;</span> <span class="na">width=</span><span class="s">&quot;200&quot;</span> <span class="na">height=</span><span class="s">&quot;125&quot;</span> <span class="nt">/&gt;</span>  
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div>
-<p>In some cases the addition of <code>font-size:0;</code> may be required in order to remove further gaps created by certain CSS properties set on the parent element i.e. table cell such as line-height.</p>
-
-<p>Warning: Small font sizes can effect your spam score.</p>
-
-<p><em> For more information visit: http://www.emailonacid.com/blog/details/C13/two<em>fixes</em>for<em>image</em>spacing<em>in</em>outlook<em>web</em>app_owa</em></p>
-
-<p><em>-courtesy of James White at http://blog.jmwhite.co.uk</em></p>
-</li>
-	  
-	    <li><h2>Hide content in Office 365/OWA (incl Webmail):</h2>
-
-<h4>Office 365 strips display, mso-hide, mso conditional</h4>
-
-<p>Set font-size in containing cell to “0px”</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;td</span> <span class="na">style=</span><span class="s">&quot;font-size: 0px; display: none;&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
-</code></pre></div></li>
-	  
-	</ul>
-</section> -->
+</section>
 			<div id="footer">
 				<a href="http://twitter.com/_netcodes"><span class="socicon">Q</span></a>
 				<a href="http://twitter.com/_netcodes"><span class="socicon">b</span></a>

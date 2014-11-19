@@ -1,8 +1,9 @@
 ---
-title: Lorem Ipsum Dolor Sit Amet
+title: Kill Gmail App Zooming
 layout: default
 category: Gmail
-tag: gmail
+tags: 
+- gmail
 ---
 
 ##Kill Gmail App Zooming:

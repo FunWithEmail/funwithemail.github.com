@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -73,3 +75,41 @@
         </ul>
       </nav>
       <div class="container">
+  <h2>Image gaps in Office 365 (OWA)</h2>
+
+<h4>Office 365 strips display:block causing images to have massive gaps</h4>
+
+<p>Wrapping an image in a <code>&lt;div&gt;</code> with a height equal to the image height will simulate
+a block element for clients that won&#39;t accept <code>display:block</code>.</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;height:125px;&quot;</span><span class="nt">&gt;</span>  
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/path/to/image.jpg&quot;</span> <span class="na">alt=</span><span class="s">&quot;Image Description&quot;</span> <span class="na">style=</span><span class="s">&quot;display:block;&quot;</span> <span class="na">width=</span><span class="s">&quot;200&quot;</span> <span class="na">height=</span><span class="s">&quot;125&quot;</span> <span class="nt">/&gt;</span>  
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+<p>In some cases the addition of <code>font-size:0;</code> may be required in order to remove further gaps created by certain CSS properties set on the parent element i.e. table cell such as line-height.</p>
+
+<p>Warning: Small font sizes can effect your spam score.</p>
+
+<p><em> For more information visit: http://www.emailonacid.com/blog/details/C13/two<em>fixes</em>for<em>image</em>spacing<em>in</em>outlook<em>web</em>app_owa</em></p>
+
+<p><em>-courtesy of James White at http://blog.jmwhite.co.uk</em></p>
+
+			<div id="footer">
+				<a href="http://twitter.com/_netcodes"><span class="socicon">Q</span></a>
+				<a href="http://twitter.com/_netcodes"><span class="socicon">b</span></a>
+				<a href="http://twitter.com/_netcodes"><span class="socicon">a</span></a>
+				<a href="http://twitter.com/_netcodes"><span class="socicon">c</span></a>
+		</div>
+	</div>	
+</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="/js/jquery.dlmenu.js"></script>
+	<script src="/js/main.js"></script>
+	<script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu();
+			});
+		</script>
+  </body>
+</html>
+

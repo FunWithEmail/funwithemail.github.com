@@ -13,8 +13,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
@@ -25,7 +25,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 <ul class="navigation">
-    <li class="nav-item"><a href="#">Home</a></li>
+    <li class="nav-item"><a href="http://localhost:4000/Outlook/">Home</a></li>
     <li class="nav-item"><a href="#">Portfolio</a></li>
     <li class="nav-item"><a href="#">About</a></li>
     <li class="nav-item"><a href="#">Blog</a></li>
@@ -38,35 +38,53 @@
 <div class="site-wrap">
 
 
-      <nav id="sideNav">
+      <nav id="sideNav"><a href="http://localhost:4000/">
         <div id="sideLogo">
-        </div>
+        </div></a>
         <ul id="bigList">
-          <li>
-            <div class="menuIcon"></div><p>OUTLOOK</p>
-          </li>
-          <li>
-            <div class="menuIcon"></div><p>OUTLOOK</p>
-          </li>
-          <li>
-            <div class="menuIcon"></div><p>OUTLOOK</p>
-          </li>
-          <li>
-            <div class="menuIcon"></div><p>OUTLOOK</p>
-          </li>
+          <a href="http://localhost:4000/Outlook/">
+            <li class="list" id="all">
+              <div class="menuIcon"></div><p>OUTLOOK</p>
+            </li>
+          </a>
+          <a href="http://localhost:4000/Gmail/">
+            <li class="list" id="outlook">
+              <div class="menuIcon"></div><p>GMAIL</p>
+            </li>
+          </a>
+          <a href="http://localhost:4000/Yahoo/">
+            <li class="list">
+              <div class="menuIcon"></div><p>YAHOO!</p>
+            </li>
+          </a>
+          <a href="http://localhost:4000/Webkit/">
+            <li class="list">
+              <div class="menuIcon"></div><p>WEBKIT</p>
+            </li>
+          </a>
+          <a href="http://localhost:4000/Windows/">
+            <li class="list">
+              <div class="menuIcon"></div><p>WINDOWS<br>PHONE</p>
+            </li>
+          </a>
+          <a href="http://localhost:4000/All/">
+            <li class="list">
+              <div class="menuIcon"></div><p>ALL</p>
+            </li>
+          </a>
         </ul>
       </nav>
       <div class="container">
-  <h2>Click To Tap:</h2>
+  <h2>Ghost column to emulate &quot;align&quot; in Outlook</h2>
 
-<h4>Change button text responsively</h4>
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:600px</span><span class="o">)</span> <span class="p">{</span>
-    <span class="nt">span</span><span class="o">[</span><span class="nt">class</span><span class="o">=</span><span class="nt">click</span><span class="o">]</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">none</span> <span class="cp">!important</span><span class="p">;</span> <span class="k">max-height</span><span class="o">:</span> <span class="m">0</span> <span class="cp">!important</span><span class="p">;</span> <span class="p">}</span>
-    <span class="nt">span</span><span class="o">[</span><span class="nt">class</span><span class="o">=</span><span class="nt">tap</span><span class="o">]</span><span class="nd">:after</span> <span class="p">{</span> <span class="k">content</span><span class="o">:</span><span class="s2">&quot;Tap&quot;</span><span class="p">;</span> <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;tap&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;click&quot;</span><span class="nt">&gt;</span>Click<span class="nt">&lt;/span&gt;&lt;/span&gt;</span> here<span class="nt">&lt;/a&gt;</span>
+<h4>Outlook hates &quot;align&quot;; we love conditionals</h4>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;td&gt;</span>
+    Table X
+    <span class="c">&lt;!--[if mso]&gt;&lt;/td&gt;&lt;td&gt;&lt;![endif]--&gt;</span>
+    Table Y
+<span class="nt">&lt;/td&gt;</span>
 </code></pre></div>
-<p><em>-courtesy of Nicole Merlin</em></p>
+<p><em>-courtesy of Mike Ragan http://labs.actionrocket.co/make<em>mobile</em>email<em>work</em>in_outlook</em></p>
 
 			<div id="footer">
 				<a href="http://twitter.com/_netcodes"><span class="socicon">Q</span></a>

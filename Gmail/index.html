@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<section id="posts">
+	<h1>Gmail</h1>
+	<ul>
+	  {% for post in site.tags.gmail %}
+	    <li>{{ post.content }}</li>
+	  {% endfor %}
+	</ul>
+</section>

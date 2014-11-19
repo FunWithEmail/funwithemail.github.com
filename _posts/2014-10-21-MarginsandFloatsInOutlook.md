@@ -1,8 +1,9 @@
 ---
-title: Lorem Ipsum Dolor Sit Amet
+title: Margins and Float in Outlook
 layout: default
 categories: Outlook
-tag: Outlook
+tags: 
+-Outlook
 ---
 
 ##Margins and Float in Outlook:

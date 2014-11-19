@@ -13,8 +13,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
@@ -25,7 +25,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 <ul class="navigation">
-    <li class="nav-item"><a href="#">Home</a></li>
+    <li class="nav-item"><a href="http://localhost:4000/Outlook/">Home</a></li>
     <li class="nav-item"><a href="#">Portfolio</a></li>
     <li class="nav-item"><a href="#">About</a></li>
     <li class="nav-item"><a href="#">Blog</a></li>
@@ -38,32 +38,50 @@
 <div class="site-wrap">
 
 
-      <nav id="sideNav">
+      <nav id="sideNav"><a href="http://localhost:4000/">
         <div id="sideLogo">
-        </div>
+        </div></a>
         <ul id="bigList">
-          <li>
-            <div class="menuIcon"></div><p>OUTLOOK</p>
-          </li>
-          <li>
-            <div class="menuIcon"></div><p>OUTLOOK</p>
-          </li>
-          <li>
-            <div class="menuIcon"></div><p>OUTLOOK</p>
-          </li>
-          <li>
-            <div class="menuIcon"></div><p>OUTLOOK</p>
-          </li>
+          <a href="http://localhost:4000/Outlook/">
+            <li class="list" id="all">
+              <div class="menuIcon"></div><p>OUTLOOK</p>
+            </li>
+          </a>
+          <a href="http://localhost:4000/Gmail/">
+            <li class="list" id="outlook">
+              <div class="menuIcon"></div><p>GMAIL</p>
+            </li>
+          </a>
+          <a href="http://localhost:4000/Yahoo/">
+            <li class="list">
+              <div class="menuIcon"></div><p>YAHOO!</p>
+            </li>
+          </a>
+          <a href="http://localhost:4000/Webkit/">
+            <li class="list">
+              <div class="menuIcon"></div><p>WEBKIT</p>
+            </li>
+          </a>
+          <a href="http://localhost:4000/Windows/">
+            <li class="list">
+              <div class="menuIcon"></div><p>WINDOWS<br>PHONE</p>
+            </li>
+          </a>
+          <a href="http://localhost:4000/All/">
+            <li class="list">
+              <div class="menuIcon"></div><p>ALL</p>
+            </li>
+          </a>
         </ul>
       </nav>
       <div class="container">
-  <h2>Margins and Float in Outlook:</h2>
+  <h2>Images in Outlook 2013:</h2>
 
-<h4>Use a capital “M” or “F”</h4>
-<div class="highlight"><pre><code class="language-html" data-lang="html">style=&quot;Margin: 20px; Float: left&quot;
+<h4>Fix broken images in Outlook 2013</h4>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;td</span> <span class="na">style=</span><span class="s">&quot;line-height: 13px;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;img.jpg&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/td&gt;</span>
 </code></pre></div>
-<p><em>-courtesy of Nicole Merlin</em></p>
-
 			<div id="footer">
 				<a href="http://twitter.com/_netcodes"><span class="socicon">Q</span></a>
 				<a href="http://twitter.com/_netcodes"><span class="socicon">b</span></a>

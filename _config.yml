@@ -2,3 +2,4 @@ name: ""
 description: ""
 markdown: redcarpet
 url: "http://localhost:4000"
+gems: ['jekyll-lunr-js-search']

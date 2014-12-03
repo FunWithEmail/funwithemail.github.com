@@ -2,11 +2,13 @@
 layout: default
 ---
 
+<div id="postCont">
 <section id="posts">
 	<h1>All</h1>
 	<ul>
-		{% for post in site.tags.all %}
+		{% for post in site.posts %}
 		  <li>{{ post.content }}</li>
 		{% endfor %}
 	</ul>
 </section>
+</div>

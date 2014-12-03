@@ -8,7 +8,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Fun With Email</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
@@ -25,56 +25,63 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 <ul class="navigation">
-    <li class="nav-item"><a href="http://localhost:4000/Outlook/">Home</a></li>
-    <li class="nav-item"><a href="#">Portfolio</a></li>
-    <li class="nav-item"><a href="#">About</a></li>
-    <li class="nav-item"><a href="#">Blog</a></li>
-    <li class="nav-item"><a href="#">Contact</a></li>
+    <li class="nav-item"><a href="http://localhost:4000/">Home</a></li>
+    <li class="nav-item"><a href="http://localhost:4000/All/">All</a></li>
+    <li class="nav-item"><a href="http://localhost:4000/Outlook/">Outlook</a></li>
+    <li class="nav-item"><a href="http://localhost:4000/Gmail/">Gmail</a></li>
+    <li class="nav-item"><a href="http://localhost:4000/Yahoo/">Yahoo!</a></li>
+    <li class="nav-item"><a href="http://localhost:4000/Webkit/">Webkit</a></li>
+    <li class="nav-item"><a href="http://localhost:4000/Windows/">Windows Phone</a></li>
 </ul>
 
-<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger"></label>
-
-<div class="site-wrap">
 
 
-      <nav id="sideNav"><a href="http://localhost:4000/">
-        <div id="sideLogo">
-        </div></a>
+<nav id="sideNav">
+        
+        <a href="http://localhost:4000/">
+          <div id="sideLogo">
+          </div>
+        </a>
+
         <ul id="bigList">
+          <a href="http://localhost:4000/All/">
+            <li class="list">
+              <div class="menuIcon" id="all"></div><p>ALL</p>
+            </li>
+          </a>
           <a href="http://localhost:4000/Outlook/">
-            <li class="list" id="all">
-              <div class="menuIcon"></div><p>OUTLOOK</p>
+            <li class="list">
+              <div class="menuIcon" id="outlook"></div><p>OUTLOOK</p>
             </li>
           </a>
           <a href="http://localhost:4000/Gmail/">
-            <li class="list" id="outlook">
-              <div class="menuIcon"></div><p>GMAIL</p>
+            <li class="list">
+              <div class="menuIcon" id="gmail"></div><p>GMAIL</p>
             </li>
           </a>
           <a href="http://localhost:4000/Yahoo/">
             <li class="list">
-              <div class="menuIcon"></div><p>YAHOO!</p>
+              <div class="menuIcon" id="yahoo"></div><p>YAHOO!</p>
             </li>
           </a>
           <a href="http://localhost:4000/Webkit/">
             <li class="list">
-              <div class="menuIcon"></div><p>WEBKIT</p>
+              <div class="menuIcon" id="webkit"></div><p>WEBKIT</p>
             </li>
           </a>
           <a href="http://localhost:4000/Windows/">
             <li class="list">
-              <div class="menuIcon"></div><p>WINDOWS<br>PHONE</p>
+              <div class="menuIcon" id="wp"></div><p>WP</p>
             </li>
           </a>
-          <a href="http://localhost:4000/All/">
-            <li class="list">
-              <div class="menuIcon"></div><p>ALL</p>
-            </li>
-          </a>
+          
         </ul>
       </nav>
-      <div class="container">
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger"></label>
+
+<div class="site-wrap">
+  
   <h2>Click To Tap:</h2>
 
 <h4>Change button text responsively</h4>
@@ -91,7 +98,7 @@
 				<a href="http://twitter.com/_netcodes"><span class="socicon">a</span></a>
 				<a href="http://twitter.com/_netcodes"><span class="socicon">c</span></a>
 		</div>
-	</div>	
+		
 </div>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

@@ -8,7 +8,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Fun With Email</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
@@ -25,57 +25,65 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 <ul class="navigation">
-    <li class="nav-item"><a href="http://localhost:4000/Outlook/">Home</a></li>
-    <li class="nav-item"><a href="#">Portfolio</a></li>
-    <li class="nav-item"><a href="#">About</a></li>
-    <li class="nav-item"><a href="#">Blog</a></li>
-    <li class="nav-item"><a href="#">Contact</a></li>
+    <li class="nav-item"><a href="http://localhost:4000/">Home</a></li>
+    <li class="nav-item"><a href="http://localhost:4000/All/">All</a></li>
+    <li class="nav-item"><a href="http://localhost:4000/Outlook/">Outlook</a></li>
+    <li class="nav-item"><a href="http://localhost:4000/Gmail/">Gmail</a></li>
+    <li class="nav-item"><a href="http://localhost:4000/Yahoo/">Yahoo!</a></li>
+    <li class="nav-item"><a href="http://localhost:4000/Webkit/">Webkit</a></li>
+    <li class="nav-item"><a href="http://localhost:4000/Windows/">Windows Phone</a></li>
 </ul>
 
-<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger"></label>
-
-<div class="site-wrap">
 
 
-      <nav id="sideNav"><a href="http://localhost:4000/">
-        <div id="sideLogo">
-        </div></a>
+<nav id="sideNav">
+        
+        <a href="http://localhost:4000/">
+          <div id="sideLogo">
+          </div>
+        </a>
+
         <ul id="bigList">
+          <a href="http://localhost:4000/All/">
+            <li class="list">
+              <div class="menuIcon" id="all"></div><p>ALL</p>
+            </li>
+          </a>
           <a href="http://localhost:4000/Outlook/">
-            <li class="list" id="all">
-              <div class="menuIcon"></div><p>OUTLOOK</p>
+            <li class="list">
+              <div class="menuIcon" id="outlook"></div><p>OUTLOOK</p>
             </li>
           </a>
           <a href="http://localhost:4000/Gmail/">
-            <li class="list" id="outlook">
-              <div class="menuIcon"></div><p>GMAIL</p>
+            <li class="list">
+              <div class="menuIcon" id="gmail"></div><p>GMAIL</p>
             </li>
           </a>
           <a href="http://localhost:4000/Yahoo/">
             <li class="list">
-              <div class="menuIcon"></div><p>YAHOO!</p>
+              <div class="menuIcon" id="yahoo"></div><p>YAHOO!</p>
             </li>
           </a>
           <a href="http://localhost:4000/Webkit/">
             <li class="list">
-              <div class="menuIcon"></div><p>WEBKIT</p>
+              <div class="menuIcon" id="webkit"></div><p>WEBKIT</p>
             </li>
           </a>
           <a href="http://localhost:4000/Windows/">
             <li class="list">
-              <div class="menuIcon"></div><p>WINDOWS<br>PHONE</p>
+              <div class="menuIcon" id="wp"></div><p>WP</p>
             </li>
           </a>
-          <a href="http://localhost:4000/All/">
-            <li class="list">
-              <div class="menuIcon"></div><p>ALL</p>
-            </li>
-          </a>
+          
         </ul>
       </nav>
-      <div class="container">
-  <h1 id="title">HTML	Email<br>Hacks</h1>
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger"></label>
+
+<div class="site-wrap">
+  
+  <div class="container">
+<h1 id="title"><span>HTML Email<br>Hacks</span></h1>
 
 <h3 id="subtitle">A series of HTML hacks for all those lovely Email clients out there.</h3>
 
@@ -84,156 +92,30 @@
 <div id="line"></div>
 
 <h2>Links and Helpful Tools</h2>
-<div id="mainLinks">
+<div id="mainLinks" class="clearfix">
 <ul>
-<li> Responsive Email Resources: <a href="www.ResponsiveEmailResources.com">www.ResponsiveEmailResources.com</a></li>
-<li> Bulletproof Buttons: <a href="www.buttons.cm">www.buttons.cm</a></li>
-<li> Bulletproof Backgrounds: <a href="www.backgrounds.cm">www.backgrounds.cm</a></li>
-<li> HTML Email Boilerplate: <a href="www.http://htmlemailboilerplate.com">www.http://htmlemailboilerplate.com</a></li>
-<li> Special characters for HTML Email: <a href="http://www.emailonacid.com/character_converter/">http://www.emailonacid.com/character_converter/</a></li> 
-<li> Send HTML Email with Google Docs: <a href="http://www.labnol.org/internet/send-html-email/19672/">http://www.labnol.org/internet/send-html-email/19672/</a></li>
+<li> Responsive Email Resources: <a href="www.ResponsiveEmailResources.com">www.ResponsiveEmailResources.com</a></li><br>
+<li> Bulletproof Buttons: <a href="www.buttons.cm">www.buttons.cm</a></li><br>
+<li> Bulletproof Backgrounds: <a href="www.backgrounds.cm">www.backgrounds.cm</a></li><br>
+<li> HTML Email Boilerplate: <a href="www.http://htmlemailboilerplate.com">www.http://htmlemailboilerplate.com</a></li><br>
+<li> Special characters for HTML Email: <a href="http://www.emailonacid.com/character_converter/">http://www.emailonacid.com/character_converter/</a></li> <br>
+<li> Send HTML Email with Google Docs: <a href="http://www.labnol.org/internet/send-html-email/19672/">http://www.labnol.org/internet/send-html-email/19672/</a></li><br>
 </ul>
 </div>
 
 <div id="arrowCont">
-	<div id="arrow"><a href="#"></a>
-	</div>
+	<a href="https://github.com/FunWithEmail/funwithemail.github.com/issues/new"><div id="arrow">
+	</div></a>
 </div>
 
-<!-- <section id="posts">
-	<h1>Gmail</h1>
-	<ul>
-	  
-	    <li><h2>Kill Gmail App Zooming:</h2>
-
-<h4>Stop Gmail app from zooming text</h4>
-<div class="highlight"><pre><code class="language-html" data-lang="html">style=&quot;min-width:600px;&quot;
-</code></pre></div>
-<p><em>-courtesy of Chris Wise</em></p>
-</li>
-	  
-	    <li><h2>Interactive Email con’t - Hover!:</h2>
-
-<h4>Hover effect works on these clients:</h4>
-
-<p>Gmail: </p>
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">*</span> <span class="o">[</span><span class="nt">lang</span><span class="o">~=</span><span class="s2">&quot;x-selector&quot;</span><span class="o">]</span><span class="nd">:hover</span> <span class="p">{</span> <span class="p">}</span>
-</code></pre></div>
-<p>Outlook Web:</p>
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.class</span><span class="nd">:hover</span>
-</code></pre></div>
-<p>Yahoo! Web: </p>
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.class</span><span class="nd">:hover</span>
-</code></pre></div>
-<p><em>-courtesy of Justin at FreshInbox</em></p>
-</li>
-	  
-	    <li><h2>Interactive Email in Gmail:</h2>
-
-<h4>No Class or ID selector support</h4>
-
-<p>Use lang as selector with &quot;x-&quot; prefix</p>
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">*</span> <span class="o">[</span><span class="nt">lang</span><span class="o">~=</span><span class="s2">&quot;x-selector&quot;</span><span class="o">]</span> <span class="p">{</span> <span class="p">}</span>
-</code></pre></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">lang=</span><span class="s">&quot;x-selector&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-</code></pre></div>
-<p><em>-courtesy of Justin at FreshInbox</em></p>
-</li>
-	  
-	    <li><h2>Fix mailto in gmail</h2>
-
-<h4>gmail strips subject and body from mailto links</h4>
-
-<p>Use lowercase for subject anbd body attribute</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;mailto:some_email@email.com?subject=A Subject&amp;body=A Body&quot;</span><span class="nt">&gt;</span>email@email.com<span class="nt">&lt;/a&gt;</span>
-</code></pre></div>
-<p><em>-courtesy of SV</em></p>
-</li>
-	  
-	</ul>
-
-	<h1>Outlook</h1>
-	<ul>
-	  
-	    <li><h2>Outlook “View in Browser”:</h2>
-
-<h4>Forces Outlook to provide a “view in browser link”</h4>
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#outlook</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span>
-</code></pre></div></li>
-	  
-	    <li><h2>Fix mailto in Outlook.com</h2>
-
-<h4>Outlook.com stops mailto from opening a new message</h4>
-
-<p>Add &quot;target=_blank&quot;</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">target=</span><span class="s">&quot;_blank&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
-</code></pre></div>
-<p><em>-courtesy of Matthijs</em></p>
-</li>
-	  
-	    <li><h2>Ghost column to emulate &quot;align&quot; in Outlook</h2>
-
-<h4>Outlook hates &quot;align&quot;; we love conditionals</h4>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;td&gt;</span>
-    Table X
-    <span class="c">&lt;!--[if mso]&gt;&lt;/td&gt;&lt;td&gt;&lt;![endif]--&gt;</span>
-    Table Y
-<span class="nt">&lt;/td&gt;</span>
-</code></pre></div>
-<p><em>-courtesy of Mike Ragan http://labs.actionrocket.co/make<em>mobile</em>email<em>work</em>in_outlook</em></p>
-</li>
-	  
-	    <li><h2>Interactive Email con’t - Hover!:</h2>
-
-<h4>Hover effect works on these clients:</h4>
-
-<p>Gmail: </p>
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">*</span> <span class="o">[</span><span class="nt">lang</span><span class="o">~=</span><span class="s2">&quot;x-selector&quot;</span><span class="o">]</span><span class="nd">:hover</span> <span class="p">{</span> <span class="p">}</span>
-</code></pre></div>
-<p>Outlook Web:</p>
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.class</span><span class="nd">:hover</span>
-</code></pre></div>
-<p>Yahoo! Web: </p>
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.class</span><span class="nd">:hover</span>
-</code></pre></div>
-<p><em>-courtesy of Justin at FreshInbox</em></p>
-</li>
-	  
-	    <li><h2>Image gaps in Office 365 (OWA)</h2>
-
-<h4>Office 365 strips display:block causing images to have massive gaps</h4>
-
-<p>Wrapping an image in a <code>&lt;div&gt;</code> with a height equal to the image height will simulate
-a block element for clients that won&#39;t accept <code>display:block</code>.</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;height:125px;&quot;</span><span class="nt">&gt;</span>  
-    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/path/to/image.jpg&quot;</span> <span class="na">alt=</span><span class="s">&quot;Image Description&quot;</span> <span class="na">style=</span><span class="s">&quot;display:block;&quot;</span> <span class="na">width=</span><span class="s">&quot;200&quot;</span> <span class="na">height=</span><span class="s">&quot;125&quot;</span> <span class="nt">/&gt;</span>  
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div>
-<p>In some cases the addition of <code>font-size:0;</code> may be required in order to remove further gaps created by certain CSS properties set on the parent element i.e. table cell such as line-height.</p>
-
-<p>Warning: Small font sizes can effect your spam score.</p>
-
-<p><em> For more information visit: http://www.emailonacid.com/blog/details/C13/two<em>fixes</em>for<em>image</em>spacing<em>in</em>outlook<em>web</em>app_owa</em></p>
-
-<p><em>-courtesy of James White at http://blog.jmwhite.co.uk</em></p>
-</li>
-	  
-	    <li><h2>Hide content in Office 365/OWA (incl Webmail):</h2>
-
-<h4>Office 365 strips display, mso-hide, mso conditional</h4>
-
-<p>Set font-size in containing cell to “0px”</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;td</span> <span class="na">style=</span><span class="s">&quot;font-size: 0px; display: none;&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
-</code></pre></div></li>
-	  
-	</ul>
-</section> -->
+</div>
 			<div id="footer">
 				<a href="http://twitter.com/_netcodes"><span class="socicon">Q</span></a>
 				<a href="http://twitter.com/_netcodes"><span class="socicon">b</span></a>
 				<a href="http://twitter.com/_netcodes"><span class="socicon">a</span></a>
 				<a href="http://twitter.com/_netcodes"><span class="socicon">c</span></a>
 		</div>
-	</div>	
+		
 </div>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

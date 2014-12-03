@@ -1,0 +1,220 @@
+{
+  "entries": [
+    {
+      "title": null,
+      "url": "/All/index.html",
+      "date": null,
+      "categories": [
+
+      ],
+      "body": ""
+    },
+    {
+      "title": null,
+      "url": "/Gmail/index.html",
+      "date": null,
+      "categories": [
+
+      ],
+      "body": ""
+    },
+    {
+      "title": null,
+      "url": "/index.html",
+      "date": null,
+      "categories": [
+
+      ],
+      "body": ""
+    },
+    {
+      "title": null,
+      "url": "/Outlook/index.html",
+      "date": null,
+      "categories": [
+
+      ],
+      "body": ""
+    },
+    {
+      "title": null,
+      "url": "/Webkit/index.html",
+      "date": null,
+      "categories": [
+
+      ],
+      "body": ""
+    },
+    {
+      "title": null,
+      "url": "/Windows/index.html",
+      "date": null,
+      "categories": [
+
+      ],
+      "body": ""
+    },
+    {
+      "title": null,
+      "url": "/Yahoo/index.html",
+      "date": null,
+      "categories": [
+
+      ],
+      "body": "There are no Yahoo! hacks yet."
+    },
+    {
+      "title": "Good formatting for bulleted list",
+      "url": "/all/2014/10/14/BulletedLists.html",
+      "date": "2014-10-14 00:00:00 -0400",
+      "categories": [
+        "all"
+      ],
+      "body": "-courtesy of Michelle Klann"
+    },
+    {
+      "title": "Change button text responsively",
+      "url": "/all/2014/10/14/ChangeButtonTextResponsively.html",
+      "date": "2014-10-14 00:00:00 -0400",
+      "categories": [
+        "all"
+      ],
+      "body": "-courtesy of Nicole Merlin"
+    },
+    {
+      "title": "Change button text responsively",
+      "url": "/all/2014/10/14/StopClientsStrippingClass.html",
+      "date": "2014-10-14 00:00:00 -0400",
+      "categories": [
+        "all"
+      ],
+      "body": "Use a space before any class styling -courtesy of Campaign Monitor http://kb.mailchimp.com/campaigns/ways-to-build/using-css-in-campaigns"
+    },
+    {
+      "title": "Fix mailto in gmail",
+      "url": "/gmail/2014/10/21/GmailMailTo.html",
+      "date": "2014-10-21 00:00:00 -0400",
+      "categories": [
+        "gmail"
+      ],
+      "body": "Use lowercase for subject anbd body attribute -courtesy of SV"
+    },
+    {
+      "title": "Hide content in Office 365/OWA",
+      "url": "/outlook/2014/10/21/HideContent365.html",
+      "date": "2014-10-21 00:00:00 -0400",
+      "categories": [
+        "outlook"
+      ],
+      "body": "Set font-size in containing cell to “0px”"
+    },
+    {
+      "title": "Image gaps in Office 365 (OWA)",
+      "url": "/outlook/2014/10/21/ImageGapsOffice365.html",
+      "date": "2014-10-21 00:00:00 -0400",
+      "categories": [
+        "outlook"
+      ],
+      "body": "Wrapping an image in a <div> with a height equal to the image height will simulate a block element for clients that won't accept display:block. In some cases the addition of font-size:0; may be required in order to remove further gaps created by certain CSS properties set on the parent element i.e. table cell such as line-height. Warning: Small font sizes can effect your spam score.  For more information visit: http://www.emailonacid.com/blog/details/C13/twofixesforimagespacinginoutlookwebapp_owa -courtesy of James White at http://blog.jmwhite.co.uk"
+    },
+    {
+      "title": "Remove autolink styling in iOS",
+      "url": "/outlook/2014/10/21/ImagesInOutlook2013.html",
+      "date": "2014-10-21 00:00:00 -0400",
+      "categories": [
+        "outlook"
+      ],
+      "body": ""
+    },
+    {
+      "title": "Interactive Email in Gmail",
+      "url": "/gmail/2014/10/21/InteractiveEmailInGmail.html",
+      "date": "2014-10-21 00:00:00 -0400",
+      "categories": [
+        "gmail"
+      ],
+      "body": "Use lang as selector with \"x-\" prefix -courtesy of Justin at FreshInbox"
+    },
+    {
+      "title": "Interactive Email con't - Hover!",
+      "url": "/gmail/2014/10/21/InteractiveEmailInGmailHover.html",
+      "date": "2014-10-21 00:00:00 -0400",
+      "categories": [
+        "gmail"
+      ],
+      "body": "Gmail:  Outlook Web: Yahoo! Web:  -courtesy of Justin at FreshInbox"
+    },
+    {
+      "title": "Marginsandfloatsinoutlook",
+      "url": "/2014/10/21/MarginsandFloatsInOutlook.html",
+      "date": "2014-10-21 00:00:00 -0400",
+      "categories": [
+
+      ],
+      "body": "-courtesy of Nicole Merlin"
+    },
+    {
+      "title": "Ghost column to emulate \"align\" in Outlook",
+      "url": "/outlook/2014/10/21/OutlookGhostColumn.html",
+      "date": "2014-10-21 00:00:00 -0400",
+      "categories": [
+        "outlook"
+      ],
+      "body": "-courtesy of Mike Ragan http://labs.actionrocket.co/makemobileemailworkin_outlook"
+    },
+    {
+      "title": "Fix mailto in Outlook.com",
+      "url": "/outlook/2014/10/21/OutlookMailTo.html",
+      "date": "2014-10-21 00:00:00 -0400",
+      "categories": [
+        "outlook"
+      ],
+      "body": "Add \"target=_blank\" -courtesy of Matthijs"
+    },
+    {
+      "title": "Outlook \"view in browser\"",
+      "url": "/outlook/2014/10/21/OutlookViewInBrowser.html",
+      "date": "2014-10-21 00:00:00 -0400",
+      "categories": [
+        "outlook"
+      ],
+      "body": ""
+    },
+    {
+      "title": "Target Webkit Clients",
+      "url": "/webkit/2014/10/21/RemoveAutolinkStyle.html",
+      "date": "2014-10-21 00:00:00 -0400",
+      "categories": [
+        "webkit"
+      ],
+      "body": "Use a span: Add additional classes such as .appleLinksWhite a, .appleLinksPink a when appropriate -courtesy of Justine Jordan"
+    },
+    {
+      "title": "Target Webkit Clients",
+      "url": "/webkit/2014/10/21/TargetWebkitClients.html",
+      "date": "2014-10-21 00:00:00 -0400",
+      "categories": [
+        "webkit"
+      ],
+      "body": "-courtesy of Kevin Mandeville"
+    },
+    {
+      "title": "Kill Gmail App Zooming",
+      "url": "/gmail/2014/10/27/KillGmailAppZooming.html",
+      "date": "2014-10-27 00:00:00 -0400",
+      "categories": [
+        "gmail"
+      ],
+      "body": "-courtesy of Chris Wise"
+    },
+    {
+      "title": "Kill Gmail App Zooming",
+      "url": "/windows%20phone/2014/10/27/WindowsPhoneCSS.html",
+      "date": "2014-10-27 00:00:00 -0400",
+      "categories": [
+        "windows phone"
+      ],
+      "body": "Note: Exchange ActiveSync based accounts do not benefit from forcing the document mode because the rendering engine is not IE Mobile.  For more information see http://blog.jmwhite.co.uk/2014/08/19/email-campaigns-windows-phone-part-2-pop3-and-imap/ -courtesy of zerocents and James White"
+    }
+  ]
+}

@@ -1,6 +1,10 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
-
+.clearfix:after {
+content: "";
+display: table;
+clear: both;
+}
 
 html {
     font-size: 1em;
@@ -71,6 +75,10 @@ textarea {
     font-style: normal;
 }
 
+a {
+  text-decoration: none;
+}
+
 .socicon {
     font-family: 'socicon' !important;
     font-size: 18pt;
@@ -107,7 +115,7 @@ html, body {
 #title {
   font-family: 'pacifico';
   font-size: 125px;
-  margin: 70px 0px 0px 0px;
+  margin: 30px 0px 0px 0px;
   line-height: 130%;
   text-shadow: 1px 2px 1px white;
 }
@@ -159,6 +167,13 @@ html, body {
     margin-top: 10%;
     float: left;
     padding: 10%;
+    display: inline-block;
+  }
+
+  #bigList a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
   }
 
   #bigList li {
@@ -170,6 +185,7 @@ html, body {
     height: auto;
     text-align: right;
     margin: 0 auto;
+    display: inline;
   }
 
   #bigList li p{
@@ -187,8 +203,33 @@ html, body {
     color: #cf5125;
   }
 
-  #bigList li:hover div {
+  #bigList li:hover #all {
+    background: url("/img/AllAfter.png");
+    background-size: cover;
+  }
+
+  #bigList li:hover #outlook {
     background: url("/img/OutlookAfter.png");
+    background-size: cover;
+  }
+
+  #bigList li:hover #gmail {
+    background: url("/img/GmailAfter.png");
+    background-size: cover;
+  }
+
+  #bigList li:hover #yahoo {
+    background: url("/img/YahooAfter.png");
+    background-size: cover;
+  }
+
+  #bigList li:hover #webkit {
+    background: url("/img/WebkitAfter.png");
+    background-size: cover;
+  }
+
+  #bigList li:hover #wp {
+    background: url("/img/WPAfter.png");
     background-size: cover;
   }
 
@@ -203,13 +244,6 @@ html, body {
     border-bottom: 2px solid #cf5125;
   }
 
-  #outlookLogo {
-    background: url("/img/Outlook.png");
-    width: 100px;
-    height: 100px;
-    float: left;
-  }
-
   #item {
     float: left;
   }
@@ -217,16 +251,24 @@ html, body {
   .container {
     width: 90%;
     float: right;
-    height: 97vh;
-    overflow: auto;
+    height: 96vh;
+    overflow: hidden;
     background: url("/img/bg.jpg");
-    position: relative;
     text-align: center;
+  }
+
+    #postCont {
+    width: 90%;
+    float: right;
+    height: 96vh;
+    background: url("/img/bg.jpg");
+    text-align: center;
+    overflow: auto;
   }
 
   #footer{
     width: 90%;
-    height: 30px;
+    height: 4vh;
     background-color: #cf5125;
     right: 0;
     bottom: 0;
@@ -242,10 +284,49 @@ html, body {
     display: inline-block;
     width: 30%;
     padding-bottom: 30%;
-    background: url("/img/OutlookBefore.png");
-    background-size: cover;
     float: left;
+    margin-top: 10px;
   }
+
+  #all {
+    background: url("/img/AllBefore.png");background-size: cover;
+  }
+
+  #outlook {
+    background: url("/img/OutlookBefore.png");background-size: cover;
+  }
+
+  #gmail {
+    background: url("/img/GmailBefore.png");background-size: cover;
+  }
+
+  #yahoo {
+    background: url("/img/YahooBefore.png");background-size: cover;
+  }
+
+  #webkit {
+    background: url("/img/WebkitBefore.png");background-size: cover;
+  }
+
+  #wp {
+    background: url("/img/WPBefore.png");background-size: cover;
+  }
+
+  .list {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+#search form  input{
+  color: black;
+}
+
+#search-results {
+  float: left;
+  height: 500px;
+  width: 900px;
+  border: 1px solid black;
+}
 
 .navigation {
   display: none;
@@ -256,32 +337,20 @@ html, body {
 }
 
 #arrowCont {
-  width: 100%;
+  width: 200px;
   text-align: center;
+  margin: 0 auto;
 }
 
 #arrow {
   width: 200px;
-  height: 75px;
-  background: black;
-  background-size: 95%;
+  height: 200px;
+  background: url("/img/Contribute.png");
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 50px auto;
+  margin: 20px auto 0 auto;
 
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
-    0% {top: 70px;}
-    50% {top: 60px;}
-    100% {top: 70px;}
-}
-
-@keyframes mymove {
-    0% {top: 70px;}
-    50% {top: 60px;}
-    100% {top: 70px;}
 }
 
 #posts {
@@ -333,6 +402,7 @@ html, body {
         float: none;
         text-align: center;
         padding: 5px 0 5px 0;
+        text-decoration: none;
     }
 
     #bigList li p {
@@ -352,89 +422,120 @@ html, body {
     }
 
     #title {
-      font-size: 70pt;
+      font-size: 65pt;
+      margin-top: 15px;
     }
 
     #subsub {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      margin-top: 10px;
     }
 
     #subsub h2 {
       margin-bottom: 0px;
     }
 
-    #arrowCont {
-      height: 100px;
-    }
-
     #arrow {
-      width: 50px;
-      -webkit-animation: mymove1280 1s infinite; /* Chrome, Safari, Opera */
-  animation: mymove1280 1s infinite;
+      margin-top: 0;
     }
 
-    /* Chrome, Safari, Opera */
-  @-webkit-keyframes mymove1280 {
-    0% {top: 5px;}
-    50% {top: 0px;}
-    100% {top: 5px;}
-  }
+    #arrowCont {
+      height: 200px;
+    }
 
-  @keyframes mymove1280 {
-    0% {top: 5px;}
-    50% {top: 0px;}
-    100% {top: 5px;}
-  }
-}
+    #subtitle {
+      margin-bottom: 0;
+    }
 
 @media (max-width: 1024px) {
-  #title {
-    font-size: 70pt;
-  }
+  #title span {
+  display: none;
+}
+  #title:after {
+  content: 'HTML Email Hacks';
+}
 
   #mainLinks {
     width: 60%;
   }
 
-  #arrow {
-    width: 50px;
-    -webkit-animation: mymove1024 1s infinite; /* Chrome, Safari, Opera */
-    animation: mymove1024 1s infinite;
+  #bigList {
+    margin-top: 0;
   }
 
-    /* Chrome, Safari, Opera */
-  @-webkit-keyframes mymove1024 {
-    0% {top: 15px;}
-    50% {top: 10px;}
-    100% {top: 15px;}
-  }
-
-  @keyframes mymove1024 {
-    0% {top: 15px;}
-    50% {top: 10px;}
-    100% {top: 15px;}
+  #subtitle {
+    margin-top: 5px;
   }
 }
 
 @media (max-width: 966px) {
     #title {
-      margin-top: 30px;
+      margin-top: 0px;
     }
 
-    #arrowCont {
-      display: none;
-    }
 
     #mainLinks {
-      margin-bottom: 40px;
+      margin-bottom: 0px;
+    }
+
+    .container {
+      overflow: hidden;
+      height: 95vh;
+    }
+
+    .site-wrap {
+      overflow: auto;
+      height: 95vh;
+    }
+
+    h2 {
+      margin-bottom: 0px;
+    }
+
+    li {
+      margin-bottom: -20px;
+    }
+
+    #footer {
+      height: 5vh;
     }
   }
 
 @media (max-width: 768px) {
+  li {
+    margin-bottom: 0;
+  }
+
+  #title {
+    font-size: 50pt;
+    margin-top: 10px;
+  }
+
+#body {
+  overflow: hidden;
+}
+
+  #mainLinks {
+    text-align: left;
+    position: relative;
+    width: 75%;
+    display: block;
+    margin-bottom: 0px;
+  }
+
+  #mainLinks ul {
+
+  }
+
+  #mainLinks li {
+    float: left;
+  }
+
   #sideNav {
     width: 100vw;
     height: 50px;
     border-bottom: 2px solid #cf5125;
+    z-index: 2;
   }
 
   #sideLogo {
@@ -446,8 +547,11 @@ html, body {
   }
 
   .container {
+    height: 97vh;
     width: 100%;
     margin-top: 50px;
+    padding: 0px 20px 20px 20px;
+    overflow: auto;
   }
 
   #bigList {
@@ -456,18 +560,21 @@ html, body {
 
   #footer {
     width: 100%;
+    display: none;
   }
 
   .site-wrap {
   /* Critical position and size styles */
-  min-height: 97%;
+  min-height: 100vh;
   min-width: 100%;
   background-color: white; /* Needs a background or else the nav will show through */
-  position: relative;
+  position: fixed;
   top: 0;
-  bottom: 197%;
+  bottom: 200%;
   right: 0;
   z-index: 1;
+  float: left;
+  overflow: hidden;
   }
 
   ::-moz-selection {
@@ -486,6 +593,7 @@ html, body {
   right: 0;
   z-index: 1;
   float: right;
+  display: none;
   }
 
   ::-moz-selection {
@@ -609,6 +717,7 @@ textarea {
   /* critical styles - hide the checkbox input */
   position: absolute;
   clip: rect(0, 0, 0, 0);
+  z-index: 99;
 }
 
 label[for="nav-trigger"] {
@@ -651,4 +760,8 @@ html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-seri
 li {
     float: right;
 }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+
 }

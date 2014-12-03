@@ -387,6 +387,11 @@ html, body {
   text-shadow: 1px 1px rgb(213, 208, 208);
 }
 
+#mainLinks li {
+  margin-bottom: -20px;
+}
+
+
 
 /* ==========================================================================
    Media Queries

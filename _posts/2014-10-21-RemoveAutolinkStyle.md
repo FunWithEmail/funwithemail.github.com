@@ -1,5 +1,5 @@
 ---
-title: Target Webkit Clients
+title: Remove Autolink Styling in iOS
 layout: default
 categories: Webkit
 tags: 

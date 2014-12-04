@@ -3,9 +3,17 @@ layout: default
 ---
 
 <div id="postCont">
-<section id="posts">
+<section id="posts" class="clearfix">
 	<h1>Yahoo!</h1>
-	<ul>
+
+	<div>
+	<ul class="titles" style="padding-bottom: 30px;">
+		{% for post in site.tags.yahoo %}
+	    <li style="border: none; margin: 0; padding: 0;"><a href="">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
+</div>
+	<ul class="posts">
 		{% if site.tags.yahoo == null %}
 		  		<p>There are no Yahoo! hacks yet.</p>
 		{% else %}

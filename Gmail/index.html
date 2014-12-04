@@ -3,9 +3,17 @@ layout: default
 ---
 
 <div id="postCont">
-<section id="posts">
+<section id="posts" class="clearfix">
 	<h1>Gmail</h1>
-	<ul>
+
+	<div>
+	<ul class="titles" style="padding-bottom: 30px;">
+		{% for post in site.tags.gmail %}
+	    <li style="border: none; margin: 0; padding: 0;"><a href="">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
+</div>
+	<ul class="posts">
 	  {% for post in site.tags.gmail %}
 	    <li>{{ post.content }}</li>
 	  {% endfor %}

@@ -6,7 +6,7 @@
   clear: both;
 }
 
-em {
+a, em {
  word-wrap: break-word;
 }
 
@@ -276,7 +276,7 @@ textarea {
     width: 90%;
     float: right;
     height: 97vh;
-    background: url("/img/bg.jpg");
+    background: url("/img/bgPosts.jpg");
     text-align: center;
     overflow: auto;
   }
@@ -848,7 +848,12 @@ textarea {
   }
 }
 
-
+@media (max-width: 667px) {
+  .scrollToTop {
+    right: 10px;
+    bottom: 10px;
+  }
+}
 
 @media (max-width: 640px) and (max-height: 360px) {
   .nav-item a {
